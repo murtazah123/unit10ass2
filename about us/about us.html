@@ -3,24 +3,31 @@
 <head>
   <!-- Link to the external CSS file for styling -->
   <link href="css/style.css" rel="stylesheet">  
-
+ 
   <!-- Specifies the character encoding for the document -->
   <meta charset="UTF-8">
-
+ 
   <!-- Makes the page responsive on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
   <!-- The title that appears in the browser tab -->
-  <title>About us</title>
-
+  <title>Homepage</title>
+ 
   <!-- External CSS file for page styling -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+ 
+  <script>
+    // This script shows an alert when the page finishes loading
+    window.onload = function() {
+      alert("Hello welcome to the Hot Beans website!"); // Welcome message alert
+    };
+  </script>
 </head>
 <body>
-
+ 
 <header>
   <!-- Logo and site title container -->
-  <div class="logo">Hot Beans</div>
+ <div class="logo">Hot Beans</div>
 
 <style>
   .logo {
@@ -37,190 +44,46 @@
     letter-spacing: 2px;
   }
 </style>
-
  
-
   <!-- Navigation menu -->
   <nav>
     <ul>
-      <li><a href="../index.html">Homepage</a></li>
-      <li><a href="about us.html">About us</a></li>
-      <li><a href="sign up.html">Sign Up</a></li>
-      <li><a href="date and fees.html">Date and Fees</a></li>
-      <li><a href="educational games.html">Educational Games</a></li>
-      <li><a href="event history.html">Events History</a></li>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about us/about us.html">About us</a></li>
+      <li><a href="page/sign up.html">Sign Up</a></li>
+      <li><a href="page/date and fees.html">Date and Fees</a></li>
+      <li><a href="page/educational games.html">Educational Games</a></li>
+      <li><a href="page/event history.html">Events History</a></li>
     </ul>
   </nav>
-
-  <!-- Social media links with icons -->
-  <div class="social-icons">
-    <!-- Instagram link -->
-    <a href="https://www.instagram.com/">
-      <img src="../images/insta.png" alt="Instagram">
-    </a>
-    <!-- X (formerly Twitter) link -->
-    <a href="https://x.com/">
-      <img src="../images/twitter.png" alt="X (Twitter)">
-    </a>
-    <!-- LinkedIn link -->
-    <a href="https://www.linkedin.com/">
-      <img src="../images/linkin.png" alt="LinkedIn">
-    </a>
-  </div>
+ 
+ <img src="images/handshake.png" alt="handshake" width="200" height="auto">
 </header>
-
+ 
 <main>
-  <!-- Main content of the About Us page -->
-  <h1>This is the about us page</h1>
-
+  <!-- Main content of the page -->
+  <h1>This is the Homepage</h1>
+ 
   <p>
-    Slovenské Vzdelávacie Centrum – South Manchester is a registered charity dedicated to preserving and promoting Slovak language and culture. We provide Slovak language education and organize cultural and community activities to help Slovak-speaking families maintain their heritage while living abroad.
+    Welcome to Slovenske Vzdelavacie centrum Manchester, where compassion, dedication, and action come together to create real change. We believe that everyone deserves a chance at a better life, and our mission is to [briefly state the charity’s purpose, e.g., provide food and shelter for those in need, support education, protect the environment]. Through the generosity of our supporters, we provide essential resources, raise awareness, and advocate for lasting solutions to the challenges faced by communities around the world. Whether you choose to donate, volunteer, or spread the word, your involvement makes a meaningful impact. Together, we can create a future where kindness and support uplift those who need it most. Join us today and be part of something truly life-changing. 
   </p>
-
   <p>
-    While our primary focus is on supporting Slovak-speaking children and families, we warmly welcome anyone interested in learning the Slovak language and engaging with our traditions. Beyond our Saturday school, we offer various workshops, events, and social activities where individuals of all ages can connect, learn, and take part in our cultural community. Our mission is to: At Slovenské Vzdelávacie Centrum – South Manchester, our mission goes beyond just teaching the Slovak language. We are here to keep our heritage alive, to ensure that children growing up abroad don’t lose their connection to their roots, and to create a place where Slovak culture thrives—even far from home.
+    If you scan the QR code it will show you some evedience of us carrying out our work.
   </p>
-
+  
+ 
+  <!-- Image with a width of 500px and height of 300px -->
   <p>
-    We believe that language is more than just words; it carries identity, history, and a sense of belonging. Through our work, we bring Slovak-speaking families together, helping them build friendships, strengthen their cultural ties, and feel at home even while living in the UK.
+    <div style="display: flex; justify-content: center; gap: 10px;">
+<img src="images/OIP.jpg" width="500" height="300">
+</div>
   </p>
-
-  <p>
-    Education is at the heart of what we do, but our purpose extends even further. We are here to bridge the gap between the UK and Slovak education systems, ensuring that children who may one day return to Slovakia can transition smoothly. We are here to support families, guide them, and make sure no one feels lost when navigating life between two countries.
-  </p>
-
-  <!-- Image representing the charity -->
-  <img src="../images/png (2)" alt="Charity image" width="400" height="250">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/CqHbjLdpsLU?si=CEtsywpl1B9ghLeP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </main>
-
+ 
 <footer>
   <!-- Footer content, here it's just the copyright symbol -->
   <p>&copy; copyright 2025 All rights reserved</p>
 </footer>
-
+ 
 </body>
 </html>
-
-<!-- Internal CSS styles for page layout -->
-<head>
-  <style>
-    body {
-      font-family: Arial, sans-serif; /* Font style for the body text */
-      margin: 0; /* Removes default margin */
-      padding: 0; /* Removes default padding */
-      text-align: center; /* Centers the text in the body */
-    }
-
-    header {
-      display: flex; /* Uses flexbox for header layout */
-      justify-content: space-between; /* Space out the logo and navigation */
-      align-items: center; /* Vertically aligns logo and nav items */
-      padding: 10px; /* Adds padding to the header */
-      background-color: #f5f5f5; /* Light gray background */
-    }
-
-    .logo {
-      width: 60px; /* Adjusts the width of the logo */
-      height: auto; /* Ensures the logo keeps its aspect ratio */
-    }
-
-    nav ul {
-      list-style: none; /* Removes default list styling */
-      padding: 0; /* Removes padding from the list */
-    }
-
-    nav ul li {
-      display: inline; /* Displays list items horizontally */
-      margin: 0 10px; /* Adds space between the list items */
-    }
-
-    nav ul li a {
-      text-decoration: none; /* Removes underline from links */
-      color: black; /* Sets the link text color to black */
-      font-weight: bold; /* Makes the links bold */
-    }
-
-    .social-icons img {
-      width: 30px; /* Sets the width of the social media icons */
-      margin: 0 5px; /* Adds space between icons */
-    }
-
-    main {
-      padding: 20px; /* Adds padding to the main content */
-    }
-
-    footer {
-      background-color: #f5f5f5; /* Light gray background */
-      padding: 10px; /* Adds padding to the footer */
-      margin-top: 20px; /* Adds space above the footer */
-    } 
-  </style>
-</head>
-
-<!-- Additional CSS styles for layout -->
-<style>
-  body {
-    font-family: Arial, sans-serif; /* Font style for body text */
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: left; /* Aligns header items to the left */
-    padding: 10px 20px; /* Adds padding around header content */
-    background-color: #f5f5f5; /* Light gray background */
-    border-bottom: 2px solid black; /* Adds a bottom border to the header */
-  }
-
-  .logo img {
-    width: 60px;
-    height: 60px; /* Adjust the size of the logo */
-  }
-
-  nav ul {
-    list-style-type: none; /* Removes default list bullets */
-    padding: 0; /* Removes padding from the list */
-    margin: 0;
-    display: flex; /* Displays navigation items in a row */
-  }
-
-  nav ul li {
-    margin: 0 10px; /* Adds spacing between the menu items */
-  }
-
-  nav ul li a {
-    text-decoration: none; /* Removes underlines from the links */
-    color: black; /* Sets the link color to black */
-    font-weight: bold; /* Makes the navigation links bold */
-  }
-
-  .social-icons img {
-    width: 30px; /* Sets the width of social media icons */
-    height: 30px; /* Sets the height of social media icons */
-    margin: 0 5px; /* Adds space between icons */
-  }
-
-  main {
-    padding: 20px; /* Adds padding to the main content */
-  }
-
-  footer {
-    padding: 10px;
-    background-color: #f5f5f5; /* Light gray background */
-    border-top: 2px solid black; /* Adds a top border to the footer */
-  }
-
-  footer nav ul {
-    justify-content: center; /* Centers the footer navigation links */
-    display: flex; /* Displays footer links horizontally */
-    padding: 10px 0;
-  }
-
-  footer nav ul li {
-    margin: 0 10px; /* Adds space between footer navigation items */
-  }
-</style>
