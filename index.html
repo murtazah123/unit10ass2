@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Link to the external CSS file for styling -->
+  <link href="css/style.css" rel="stylesheet">  
+
+  <!-- Specifies the character encoding for the document -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the page responsive on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The title that appears in the browser tab -->
+  <title>Homepage</title>
+
+  <!-- External CSS file for page styling -->
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    // This script shows an alert when the page finishes loading
+    window.onload = function() {
+      alert("Hello welcome to our website!"); // Welcome message alert
+    };
+  </script>
+</head>
+<body>
+
+<header>
+  <!-- Logo and site title container -->
+  <div class="logo">
+    <!-- Logo image -->
+    <img src="images/logo.png" alt="Logo">
+    <!-- Site title text -->
+    <span>Slovenské Vzdelávacie Centrum Manchester</span>
+  </div>
+
+  <!-- Internal styles for the logo and its positioning -->
+  <style>
+    .logo {
+      display: flex; /* Ensures the image and text are side by side */
+      align-items: center; /* Vertically aligns the text with the image */
+      gap: 10px; /* Adds spacing between the image and text */
+    }
+    .logo img {
+      width: 60px; /* Adjusts image size */
+      height: auto;
+    }
+    .logo span {
+      font-size: 16px; /* Adjust text size */
+      white-space: nowrap; /* Prevents text from wrapping to the next line */
+    }
+  </style>
+
+  <!-- Navigation menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="page/about us.html">About us</a></li>
+      <li><a href="page/sign up.html">Sign Up</a></li>
+      <li><a href="page/date and fees.html">Date and Fees</a></li>
+      <li><a href="page/educational games.html">Educational Games</a></li>
+      <li><a href="page/event history.html">Events History</a></li>
+    </ul>
+  </nav>
+
+  <!-- Social media links with icons -->
+  <div class="social-icons">
+    <!-- Instagram link -->
+    <a href="https://www.instagram.com/">
+      <img src="images/insta.png" alt="Instagram">
+    </a>
+    <!-- X (formerly Twitter) link -->
+    <a href="https://x.com/">
+      <img src="images/twitter.png" alt="X (Twitter)">
+    </a>
+    <!-- LinkedIn link -->
+    <a href="https://www.linkedin.com/">
+      <img src="images/linkin.png" alt="LinkedIn">
+    </a>
+  </div>
+</header>
+
+<main>
+  <!-- Main content of the page -->
+  <h1>This is the Homepage</h1>
+
+  <p>
+    Welcome to Slovenske Vzdelavacie centrum Manchester, where compassion, dedication, and action come together to create real change. We believe that everyone deserves a chance at a better life, and our mission is to [briefly state the charity’s purpose, e.g., provide food and shelter for those in need, support education, protect the environment]. Through the generosity of our supporters, we provide essential resources, raise awareness, and advocate for lasting solutions to the challenges faced by communities around the world. Whether you choose to donate, volunteer, or spread the word, your involvement makes a meaningful impact. Together, we can create a future where kindness and support uplift those who need it most. Join us today and be part of something truly life-changing. 
+  </p>
+  <p>
+    If you scan the QR code it will show you some evedience of us carrying out our work.
+  </p>
+  
+
+  <!-- Image with a width of 500px and height of 300px -->
+  <p>
+    <div style="display: flex; justify-content: center; gap: 10px;">
+<img src="images/png" alt="Image 1" width="500" height="300">
+<img src="images/slovak.jpg" alt="Image 2" width="500" height="300">
+<img src="images/qrcode_scontent-lhr8-2.xx.fbcdn.net.png" alt="QR code" width="500" height="300">
+</div>
+  </p>
+</main>
+
+<footer>
+  <!-- Footer content, here it's just the copyright symbol -->
+  <p>&copy; copyright 2025 All rights reserved</p>
+</footer>
+
+</body>
+</html>
