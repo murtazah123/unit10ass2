@@ -57,118 +57,118 @@
 <main>
   <!-- Main content of the page -->
   <h1>This is the staff profiles page</h1>
- 
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Hot Beans Team</title>
-<link rel="stylesheet" href="style.css">
+<style>
+   body {
+     font-family: Arial, sans-serif;
+     background-color: #f3f3f3;
+     text-align: center;
+     padding: 20px;
+   }
+   h1 {
+     color: #b94e3b;
+   }
+   .team-container {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 30px;
+     margin-top: 30px;
+   }
+   .person {
+     background-color: #fff;
+     border: 1px solid #ccc;
+     border-radius: 12px;
+     padding: 15px;
+     width: 200px;
+     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+     transition: transform 0.2s;
+   }
+   .person:hover {
+     transform: scale(1.05);
+   }
+   .photo {
+     width: 100%;
+     height: 180px;
+     border-radius: 10px;
+     object-fit: cover;
+   }
+   .name {
+     font-weight: bold;
+     font-size: 18px;
+     margin-top: 10px;
+   }
+   .role {
+     font-style: italic;
+     color: #666;
+     margin-top: 4px;
+   }
+   .reason {
+     font-size: 13px;
+     color: #444;
+     margin-top: 8px;
+   }
+</style>
 </head>
 <body>
 <h1>Meet the Hot Beans Team ☕</h1>
-<div id="team" class="team-container"></div>
-<script src="script.js"></script>
+<div class="team-container" id="team"></div>
+<script>
+   const teamMembers = [
+     {
+       name: "Sam",
+       role: "Front-End Developer",
+       image: "https://randomuser.me/api/portraits/women/44.jpg",
+       reason: "I love creating sleek, user-friendly interfaces!"
+     },
+     {
+       name: "Luca",
+       role: "Back-End Developer",
+       image: "https://randomuser.me/api/portraits/men/22.jpg",
+       reason: "I enjoy building powerful and reliable systems."
+     },
+     {
+       name: "Priya",
+       role: "UI/UX Designer",
+       image: "https://randomuser.me/api/portraits/women/68.jpg",
+       reason: "Designing beautiful and functional experiences is my passion."
+     },
+     {
+       name: "Alex",
+       role: "Full-Stack Developer",
+       image: "https://randomuser.me/api/portraits/men/55.jpg",
+       reason: "I love working on both the front and back of web apps!"
+     }
+   ];
+   const teamContainer = document.getElementById('team');
+   teamMembers.forEach(member => {
+     const card = document.createElement('div');
+     card.className = 'person';
+     const img = document.createElement('img');
+     img.src = member.image;
+     img.className = 'photo';
+     const name = document.createElement('div');
+     name.className = 'name';
+     name.textContent = member.name;
+     const role = document.createElement('div');
+     role.className = 'role';
+     role.textContent = member.role;
+     const reason = document.createElement('div');
+     reason.className = 'reason';
+     reason.textContent = member.reason;
+     card.appendChild(img);
+     card.appendChild(name);
+     card.appendChild(role);
+     card.appendChild(reason);
+     teamContainer.appendChild(card);
+   });
+</script>
 </body>
 </html>
-  
-  <style>
-  body {
- font-family: Arial, sans-serif;
- text-align: center;
- background-color: #f9f9f9;
-}
-.team-container {
- display: flex;
- justify-content: center;
- gap: 30px;
- flex-wrap: wrap;
- margin-top: 30px;
-}
-.person {
- background-color: #fff;
- border: 2px solid #ddd;
- border-radius: 10px;
- padding: 15px;
- width: 120px;
- box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
- transition: transform 0.2s;
- cursor: pointer;
-}
-.person:hover {
- transform: scale(1.05);
-}
-.icon {
- font-size: 50px;
-}
-.name {
- margin-top: 10px;
- font-weight: bold;
-}
-.reason {
- margin-top: 5px;
- font-size: 12px;
- color: #555;
- display: none;
-}
-  </style>
-  <script>
-    const teamMembers = [
- {
-   name: "Sam",
-   icon: "👩‍💻",
-   reason: "Loves the friendly team atmosphere and cool projects."
- },
- {
-   name: "Luca",
-   icon: "👨‍🔧",
-   reason: "Enjoys the flexibility and creative freedom."
- },
- {
-   name: "Priya",
-   icon: "👩‍🎨",
-   reason: "Appreciates the company’s focus on design and innovation."
- },
- {
-   name: "Alex",
-   icon: "🧑‍🚀",
-   reason: "Thrilled to work on cutting-edge tech and AI at Hot Beans!"
- }
-];
-const teamContainer = document.getElementById('team');
-teamMembers.forEach(member => {
- const card = document.createElement('div');
- card.className = 'person';
- const icon = document.createElement('div');
- icon.className = 'icon';
- icon.textContent = member.icon;
- const name = document.createElement('div');
- name.className = 'name';
- name.textContent = member.name;
- const reason = document.createElement('div');
- reason.className = 'reason';
- reason.textContent = member.reason;
- card.appendChild(icon);
- card.appendChild(name);
- card.appendChild(reason);
- // Show reason on hover
- card.addEventListener('mouseenter', () => {
-   reason.style.display = 'block';
- });
- card.addEventListener('mouseleave', () => {
-   reason.style.display = 'none';
- });
- teamContainer.appendChild(card);
-});
-  </script>
- 
-  <!-- Image with a width of 500px and height of 300px -->
-  <p>
-    <div style="display: flex; justify-content: center; gap: 10px;">
-<img src="../images/people1.jpg" width="500" height="300">
-</div>
-  </p>
-</main>
  
 <footer>
   <!-- Footer content, here it's just the copyright symbol -->
