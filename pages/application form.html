@@ -56,19 +56,122 @@
 <main>
   <!-- Main content of the page -->
   <h1>This is the Application form page</h1>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hot Beans Job Application</title>
+<style>
+   body {
+     font-family: Arial, sans-serif;
+     background: #f5f5f5;
+     padding: 20px;
+   }
+   .application-form {
+     background: white;
+     max-width: 500px;
+     margin: auto;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   }
+   h2 {
+     text-align: center;
+     color: #b94e3b;
+   }
+   label {
+     display: block;
+     margin: 15px 0 5px;
+     font-weight: bold;
+   }
+   input[type="text"],
+   input[type="email"],
+   input[type="tel"],
+   select,
+   input[type="file"] {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     box-sizing: border-box;
+   }
+   button {
+     margin-top: 20px;
+     padding: 12px;
+     width: 100%;
+     background-color: #b94e3b;
+     color: white;
+     border: none;
+     border-radius: 6px;
+     font-size: 16px;
+     cursor: pointer;
+   }
+   button:hover {
+     background-color: #a03e2d;
+   }
+   .success {
+     margin-top: 20px;
+     color: green;
+     text-align: center;
+   }
+   .error {
+     color: red;
+     font-size: 13px;
+   }
+</style>
+</head>
+<body>
+<div class="application-form">
+<h2>Apply to Hot Beans ☕</h2>
+<form id="jobForm">
+<label for="fullName">Full Name:</label>
+<input type="text" id="fullName" name="fullName" required>
+<label for="contactNumber">Contact Number:</label>
+<input type="tel" id="contactNumber" name="contactNumber" required pattern="[0-9]{10}" placeholder="e.g. 07712345678">
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" required>
+<label for="jobRole">Job Applying For:</label>
+<select id="jobRole" name="jobRole" required>
+<option value="">-- Select a job --</option>
+<option value="Front-End Developer">Front-End Developer</option>
+<option value="Back-End Developer">Back-End Developer</option>
+<option value="UI/UX Designer">UI/UX Designer</option>
+<option value="Full-Stack Developer">Full-Stack Developer</option>
+</select>
+<label for="cv">Upload CV:</label>
+<input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+<button type="submit">Submit Application</button>
+<div class="success" id="successMessage"></div>
+</form>
+</div>
+<script>
+   const form = document.getElementById('jobForm');
+   const successMessage = document.getElementById('successMessage');
+   form.addEventListener('submit', function(event) {
+     event.preventDefault();
+     const name = form.fullName.value.trim();
+     const number = form.contactNumber.value.trim();
+     const email = form.email.value.trim();
+     const job = form.jobRole.value;
+     const cv = form.cv.files[0];
+     // Simple validation
+     if (!name || !number || !email || !job || !cv) {
+       alert('Please fill out all fields and upload your CV.');
+       return;
+     }
+     successMessage.textContent = `Thank you, ${name}! Your application for ${job} has been submitted.`;
+     form.reset();
+   });
+</script>
+</body>
+</html>
  
-  <p>
-   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-  </p>
  
   
  
-  <!-- Image with a width of 500px and height of 300px -->
-  <p>
-    <div style="display: flex; justify-content: center; gap: 10px;">
-<img src="../images/people1.jpg" width="500" height="300">
-</div>
-  </p>
+ 
+ 
 </main>
  
 <footer>
